@@ -50,3 +50,7 @@ end
 ### CWE-99: Improper Control of Resource Identifiers ('Resource Injection')
 
 <https://cwe.mitre.org/data/definitions/99.html>
+
+## Additional Checks
+
+This package only provides coverage against some CWEs. For additional checks, tools such as [JuliaHub](mailto:sales@juliahub.com?subject=Inquiry%20about%20JuliaHub%20for%20additional%20static%20checks&body=Hello%2C%0AI%20am%20interested%20in%20learning%20more%20about%20how%20JuliaHub%20can%20provide%20additional%20static%20checks.%20Please%20provide%20me%20with%20more%20information.%0AThank%20you!%0A) can provide greater static coverage.
