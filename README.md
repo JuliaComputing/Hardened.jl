@@ -11,27 +11,26 @@ This is useful for security and safety crtical systems.
 Currently this checks for:
     - Bounds checking
     - Global IEEE math mode
+    - Function overwrite
 
 Bounds checking: overrides any `@inbounds` declarations
 IEEE math mode: overrides any `@fastmath` declarations
+Function overwrite: insures against resource injection and ensures testing integrity
 
-## CWE-125: Out-of-bounds Read
+## Covered CWEs
+
+### CWE-125: Out-of-bounds Read
 
 <https://cwe.mitre.org/data/definitions/125.html>
 
-This package will error if bounds checking is not enabled
-
-## CWE-787: Out-of-bounds Write
+### CWE-787: Out-of-bounds Write
 
 <https://cwe.mitre.org/data/definitions/787.html>
 
-## CWE-1339: Insufficient Precision or Accuracy of a Real Number
+### CWE-1339: Insufficient Precision or Accuracy of a Real Number
 
 <https://cwe.mitre.org/data/definitions/1339.html>
 
-## CWE-190: Integer Overflow or Wraparound
+### CWE-99: Improper Control of Resource Identifiers ('Resource Injection')
 
-<https://cwe.mitre.org/data/definitions/190.html>
-
-Common arithmetic operators are converted to their counterparts in
-`Base.Checked`, avoiding common overflow vulnerabilities and errors.
+<https://cwe.mitre.org/data/definitions/99.html>
