@@ -1,9 +1,5 @@
 # Hardened
 
-[![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://sjkelly.github.io/Hardened.jl/stable)
-[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://sjkelly.github.io/Hardened.jl/dev)
-[![Build Status](https://github.com/sjkelly/Hardened.jl/workflows/CI/badge.svg)](https://github.com/sjkelly/Hardened.jl/actions)
-
 Hardened.jl is a simple package to strictly check that Julia
 is running with the correct flags for Hardened Compilation.
 This is useful for security and safety crtical systems.

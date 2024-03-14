@@ -1,6 +1,6 @@
 name = "Hardened"
 uuid = "073d191d-acb8-4167-a18a-291ce1770f7f"
-authors = ["Steve Kelly <kd2cca@gmail.com> and contributors"]
+authors = ["Juliahub, Inc."]
 version = "0.1.0"
 
 [compat]
