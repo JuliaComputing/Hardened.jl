@@ -5,13 +5,33 @@ is running with the correct flags for Hardened Compilation.
 This is useful for security and safety crtical systems.
 
 Currently this checks for:
-    - Bounds checking
-    - Global IEEE math mode
-    - Function overwrite
+
+- Bounds checking
+- Global IEEE math mode
+- Function overwrite
 
 Bounds checking: overrides any `@inbounds` declarations
 IEEE math mode: overrides any `@fastmath` declarations
 Function overwrite: insures against resource injection and ensures testing integrity
+
+## Example workflow
+
+```julia
+using Hardened
+using PrecompileTools
+
+# PrecompileTools workload
+@setup_workload begin
+
+    # This will check that the compilation is hardened
+    Hardened.check()
+
+    @compile_workload begin
+        # ...
+    end
+end
+
+```
 
 ## Covered CWEs
 
